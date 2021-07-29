@@ -25,6 +25,7 @@ function litres(time) {
 
  //https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
 // Convert a string to an array
+
 function stringToArray(str) {
    let arr = str.split(" ");
    return arr;
@@ -33,6 +34,7 @@ function stringToArray(str) {
 
  //https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
  //DNA to RNA Conversion
+
  function DNAtoRNA(dna) {
    return dna.replace(/T/g, "U");
  }
@@ -43,4 +45,44 @@ function stringToArray(str) {
   const min = list => Math.min(...list);
   const max = list => Math.max(...list);
   
- 
+  //https://www.codewars.com/kata/beginner-lost-without-a-map
+  //Lost Without a Map
+
+  function maps(x) {
+    return x.map((a) => a * 2);
+  }
+
+  //https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
+  //Find the first non-consecutive number
+
+  function firstNonConsecutive(arr) {
+    for (let i=0; i< arr.length-1; i++) {
+      if (arr[i + 1] !== arr[i] + 1) {
+        return arr[i + 1];
+      }
+    }return null;
+  }
+
+  //https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
+  //Find the smallest integer in the array
+
+  class SmallestIntegerFinder {
+    findSmallestInt(args) {
+      return Math.min(...args);
+    }
+  }
+  
+  class SmallestIntegerFinder {
+    findSmallestInt(args) {
+      let smallest = args[0]
+      for(let i = 1; i < args.length; i++){
+          if(args[i] < smallest) smallest = args[i]
+      }
+      return smallest
+  }
+  }
+// https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
+//Geometry Basics: Circle Circumference in 2D
+function circleCircumference(circle) {
+  return 2 * Math.PI * circle.radius;
+}  
