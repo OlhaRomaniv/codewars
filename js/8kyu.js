@@ -1,3 +1,10 @@
+//https://www.codewars.com/kata/5265326f5fda8eb1160004c8
+//Convert a Number to a String!
+
+const numberToString = (num) => {
+    return num.toString();
+}
+
 //https://www.codewars.com/kata/53da3dbb4a5168369a0000fe
 //Even or Odd
 
