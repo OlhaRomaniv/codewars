@@ -4,11 +4,26 @@
 function even_or_odd(number) {
     return number % 2 === 0 ? "Even" : "Odd"
 }
+
 //https://www.codewars.com/kata/56dec885c54a926dcd001095
 //Opposite number
 
 function opposite(number) {
     return (-number);
+}
+
+//https://www.codewars.com/kata/55685cd7ad70877c23000102
+//Return Negative
+
+function makeNegative(num) {
+    return num > 0 ? -num : num;
+}
+
+//https://www.codewars.com/kata/53369039d7ab3ac506000467
+//Convert boolean values to strings 'Yes' or 'No'.
+
+function boolToWord(bool) {
+    return bool === true ? 'Yes' : 'No'
 }
 
 //https://www.codewars.com/kata/grasshopper-messi-goals-function/train/javascript
