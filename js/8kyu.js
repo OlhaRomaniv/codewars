@@ -127,3 +127,46 @@ class SmallestIntegerFinder {
 function circleCircumference(circle) {
     return 2 * Math.PI * circle.radius;
 }
+
+//https://www.codewars.com/kata/57eae20f5500ad98e50002c5
+//Remove String Spaces
+
+const noSpace = (x) => x.replace(/\s/g, "");
+
+//https://www.codewars.com/kata/5ce9c1000bab0b001134f5af
+//Quarter of the year
+
+const quarterOf = (month) => {
+    switch (month) {
+        case (1):
+        case (2):
+        case (3):
+            return 1;
+        case (4):
+        case (5):
+        case (6):
+            return 2;
+        case (7):
+        case (8):
+        case (9):
+            return 3;
+        case (10):
+        case (11):
+        case (12):
+            return 4;
+    }
+}
+
+//https://www.codewars.com/kata/57ec8bd8f670e9a47a000f89
+//The Wide-Mouthed frog!
+
+const mouthSize = (animal) => {
+    return animal.toLowerCase() === 'alligator' ? 'small' : 'wide';
+}
+
+//https://www.codewars.com/kata/5772da22b89313a4d50012f7
+//Grasshopper - Personalized Message
+
+function greet(name, owner) {
+    return (name === owner) ? "Hello boss" : "Hello guest";
+}
