@@ -164,9 +164,49 @@ const mouthSize = (animal) => {
     return animal.toLowerCase() === 'alligator' ? 'small' : 'wide';
 }
 
+//https://www.codewars.com/kata/57eaeb9578748ff92a000009
+//Sum Mixed Array
+function sumMix(x) {
+    return x.reduce((a, b) => Number(a) + Number(b))
+}
+
 //https://www.codewars.com/kata/5772da22b89313a4d50012f7
 //Grasshopper - Personalized Message
 
 function greet(name, owner) {
     return (name === owner) ? "Hello boss" : "Hello guest";
+}
+
+//https://www.codewars.com/kata/515e188a311df01cba000003
+//Get Planet Name By ID
+function getPlanetName(id) {
+    let name;
+    switch (id) {
+        case 1:
+            name = 'Mercury';
+            break;
+        case 2:
+            name = 'Venus';
+            break;
+        case 3:
+            name = 'Earth';
+            break;
+        case 4:
+            name = 'Mars';
+            break;
+        case 5:
+            name = 'Jupiter';
+            break;
+        case 6:
+            name = 'Saturn';
+            break;
+        case 7:
+            name = 'Uranus';
+            break;
+        case 8:
+            name = 'Neptune';
+            break;
+    }
+
+    return name;
 }
