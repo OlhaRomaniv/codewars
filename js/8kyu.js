@@ -210,3 +210,18 @@ function getPlanetName(id) {
 
     return name;
 }
+
+//https://www.codewars.com/kata/56ff6a70e1a63ccdfa0001b1
+//SpeedCode #2 - Array Madness
+
+function arrayMadness(a, b) {
+    let resa = 0,
+        resb = 0;
+    for (const i in a) {
+        resa += a[i] ** 2;
+    }
+    for (const j in b) {
+        resb += b[j] ** 3;
+    }
+    return resa > resb;
+}
