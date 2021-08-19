@@ -211,6 +211,17 @@ function getPlanetName(id) {
     return name;
 }
 
+//https://www.codewars.com/kata/57f780909f7e8e3183000078
+//Beginner - Reduce but Grow
+const grow = (x) => { return x.reduce((a, b) => a * b) }
+
+//https://www.codewars.com/kata/55f9b48403f6b87a7c0000bd
+//Beginner Series #1 School Paperwork
+
+const paperwork = (n, m) => {
+    return n < 0 || m < 0 ? 0 : n * m;
+}
+
 //https://www.codewars.com/kata/56ff6a70e1a63ccdfa0001b1
 //SpeedCode #2 - Array Madness
 
