@@ -104,6 +104,11 @@ function firstNonConsecutive(arr) {
     return null;
 }
 
+//https://www.codewars.com/kata/5556282156230d0e5e000089
+//DNA to RNA Conversion
+
+const DNAtoRNA = (dna) => { return dna.replace(/T/g, 'U') }
+
 //https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
 //Find the smallest integer in the array
 
