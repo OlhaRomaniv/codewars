@@ -241,3 +241,11 @@ function arrayMadness(a, b) {
     }
     return resa > resb;
 }
+
+//https://www.codewars.com/kata/56ff9b53140fcca90b000530
+//SpeedCode #3 × Fun with ES6 Classes #5 - Dogs and Classes
+class Labrador extends Dog {
+    constructor(name, age, gender, master) {
+        super(name, age, gender, "Labrador", "Large", master, true);
+    }
+}

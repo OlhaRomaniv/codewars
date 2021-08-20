@@ -36,3 +36,11 @@ class Dog extends Animal {
         return `Hello ${this.master}`;
     }
 }
+
+//https://www.codewars.com/kata/52fba66badcd10859f00097e
+//Disemvowel Trolls
+const disemvowel = (str) => { return str.replace(/[aeiou]/ig, '') }
+
+//https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9
+//Shortest Word
+const findShort = (s) => { return Math.min(...s.split(' ').map(i => i.length)) }
