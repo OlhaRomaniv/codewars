@@ -249,3 +249,7 @@ class Labrador extends Dog {
         super(name, age, gender, "Labrador", "Large", master, true);
     }
 }
+
+//https://www.codewars.com/kata/571f1eb77e8954a812000837
+//Training JS #5: Basic data types--Object
+const animal = (obj) => { return 'This ' + obj.color + ' ' + obj.name + ' has ' + obj.legs + ' legs.' }

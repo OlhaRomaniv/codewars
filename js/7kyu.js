@@ -44,3 +44,9 @@ const disemvowel = (str) => { return str.replace(/[aeiou]/ig, '') }
 //https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9
 //Shortest Word
 const findShort = (s) => { return Math.min(...s.split(' ').map(i => i.length)) }
+
+//https://www.codewars.com/kata/544a54fd18b8e06d240005c0
+//Smallest value of an array
+function min(arr, toReturn) {
+    return toReturn === 'value' ? Math.min(...arr) : arr.indexOf(Math.min(...arr));
+}
