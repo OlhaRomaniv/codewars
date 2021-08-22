@@ -1,9 +1,11 @@
 //https://www.codewars.com/kata/5265326f5fda8eb1160004c8
 //Convert a Number to a String!
 
-const numberToString = (num) => {
-    return num.toString();
-}
+const numberToString = (num) => { return num.toString(); }
+
+//https://www.codewars.com/kata/5168bb5dfe9a00b126000018
+//Reversed Strings
+const solution = (str => str.split('').reverse().join(''));
 
 //https://www.codewars.com/kata/53da3dbb4a5168369a0000fe
 //Even or Odd
@@ -43,9 +45,7 @@ function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
 //https://www.codewars.com/kata/57ec8bd8f670e9a47a000f89/train/javascript
 //The Wide-Mouthed frog!
 
-const mouthSize = (animal) => {
-    return animal === "alligator" ? "small" : "wide"
-}
+const mouthSize = (animal) => { return animal === "alligator" ? "small" : "wide" }
 
 //https://www.codewars.com/kata/grasshopper-terminal-game-move-function/train/javascript
 //Terminal game move function
@@ -130,9 +130,9 @@ class SmallestIntegerFinder {
 
 //https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a
 //Beginner Series #2 Clock
-function past(h, m, s){
-    return  h * 3600000 + m * 60000 + s * 1000;
-  }
+function past(h, m, s) {
+    return h * 3600000 + m * 60000 + s * 1000;
+}
 
 // https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
 //Geometry Basics: Circle Circumference in 2D
@@ -172,9 +172,7 @@ const quarterOf = (month) => {
 //https://www.codewars.com/kata/57ec8bd8f670e9a47a000f89
 //The Wide-Mouthed frog!
 
-const mouthSize = (animal) => {
-    return animal.toLowerCase() === 'alligator' ? 'small' : 'wide';
-}
+const mouthSize = (animal) => { return animal.toLowerCase() === 'alligator' ? 'small' : 'wide'; }
 
 //https://www.codewars.com/kata/57eaeb9578748ff92a000009
 //Sum Mixed Array
@@ -230,9 +228,7 @@ const grow = (x) => { return x.reduce((a, b) => a * b) }
 //https://www.codewars.com/kata/55f9b48403f6b87a7c0000bd
 //Beginner Series #1 School Paperwork
 
-const paperwork = (n, m) => {
-    return n < 0 || m < 0 ? 0 : n * m;
-}
+const paperwork = (n, m) => { return n < 0 || m < 0 ? 0 : n * m; }
 
 //https://www.codewars.com/kata/56ff6a70e1a63ccdfa0001b1
 //SpeedCode #2 - Array Madness
@@ -260,5 +256,3 @@ class Labrador extends Dog {
 //https://www.codewars.com/kata/571f1eb77e8954a812000837
 //Training JS #5: Basic data types--Object
 const animal = (obj) => { return 'This ' + obj.color + ' ' + obj.name + ' has ' + obj.legs + ' legs.' }
-
-
