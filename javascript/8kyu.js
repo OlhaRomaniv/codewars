@@ -127,6 +127,13 @@ class SmallestIntegerFinder {
         return smallest
     }
 }
+
+//https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a
+//Beginner Series #2 Clock
+function past(h, m, s){
+    return  h * 3600000 + m * 60000 + s * 1000;
+  }
+
 // https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
 //Geometry Basics: Circle Circumference in 2D
 function circleCircumference(circle) {
@@ -253,3 +260,5 @@ class Labrador extends Dog {
 //https://www.codewars.com/kata/571f1eb77e8954a812000837
 //Training JS #5: Basic data types--Object
 const animal = (obj) => { return 'This ' + obj.color + ' ' + obj.name + ' has ' + obj.legs + ' legs.' }
+
+
