@@ -68,3 +68,30 @@ function Counter() {
     this.count = 0;
     this.updateCount = () => { this.count++ };
 }
+
+//https://www.codewars.com/kata/546e2562b03326a88e000020
+//Square Every Digit
+function squareDigits(num) {
+    const result = num.toString().split('').map((i) => i ** 2).join('');
+    return parseInt(result);
+}
+
+//https://www.codewars.com/kata/554b4ac871d6813a03000035
+//Highest and Lowest
+function highAndLow(numbers) {
+    const arr = numbers.split(" ");
+    return Math.max(...arr) + " " + Math.min(...arr)
+}
+
+
+//https://www.codewars.com/kata/55b42574ff091733d900002f
+//Friend or Foe?
+function friend(friends) {
+    const names = []
+    for (let i = 0; i < friends.length; i++) {
+        if (friends[i].length === 4) {
+            names.push(friends[i]);
+        }
+    }
+    return names
+}
