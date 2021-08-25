@@ -256,3 +256,35 @@ class Labrador extends Dog {
 //https://www.codewars.com/kata/571f1eb77e8954a812000837
 //Training JS #5: Basic data types--Object
 const animal = (obj) => { return 'This ' + obj.color + ' ' + obj.name + ' has ' + obj.legs + ' legs.' }
+
+//https://www.codewars.com/kata/5583090cbe83f4fd8c000051
+//Convert number to reversed array of digits
+function digitize(n) {
+    return Array.from(String(n), Number).reverse()
+}
+
+//https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15
+//A wolf in sheep's clothing
+function warnTheSheep(queue) {
+    if (queue[queue.length - 1] === "wolf") {
+        return "Pls go away and stop eating my sheep";
+    }
+    const sheeps = [...queue].reverse();
+    for (let i = 0; i < sheeps.length; i++) {
+        if (sheeps[i] === "wolf") {
+            return "Oi! Sheep number " + i + "! You are about to be eaten by a wolf!";
+        }
+    }
+}
+
+//https://www.codewars.com/kata/5715eaedb436cf5606000381
+//Sum of positive
+function positiveSum(arr) {
+    let sum = 0
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 0) {
+            sum += arr[i];
+        }
+    }
+    return sum
+}
