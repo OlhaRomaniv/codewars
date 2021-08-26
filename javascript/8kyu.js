@@ -288,3 +288,22 @@ function positiveSum(arr) {
     }
     return sum
 }
+
+//https://www.codewars.com/kata/55a144eff5124e546400005a
+//Classy Classes
+class Person {
+    constructor(name, age) {
+        this.name = name,
+            this.age = age,
+            this.info = name + 's age is ' + age
+    }
+}
+
+//https://www.codewars.com/kata/55a14aa4817efe41c20000bc
+//Classy Extentions
+class Cat extends Animal {
+    constuctor(name, speak) {}
+    speak() {
+        return this.name + ' meows.'
+    }
+}
