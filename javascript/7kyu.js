@@ -95,3 +95,10 @@ function friend(friends) {
     }
     return names
 }
+
+//https://www.codewars.com/kata/5467e4d82edf8bbf40000155
+//Descending Order
+function descendingOrder(n) {
+    const num = n.toString().split("").sort().reverse().join('')
+    return parseInt(num)
+}
