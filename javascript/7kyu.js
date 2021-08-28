@@ -102,3 +102,10 @@ function descendingOrder(n) {
     const num = n.toString().split("").sort().reverse().join('')
     return parseInt(num)
 }
+
+//https://www.codewars.com/kata/558fc85d8fd1938afb000014
+//Sum of two lowest positive integers
+function sumTwoSmallestNumbers(numbers) {
+    const sorted = numbers.sort((a, b) => a - b);
+    return sorted[0] + sorted[1]
+}
