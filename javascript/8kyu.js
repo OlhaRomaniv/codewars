@@ -307,3 +307,11 @@ class Cat extends Animal {
         return this.name + ' meows.'
     }
 }
+
+
+//https://www.codewars.com/kata/515e271a311df0350d00000f
+//Square(n) Sum
+function squareSum(numbers) {
+    const square = numbers.map((i) => i ** 2)
+    return square.reduce((a, b) => a + b, 0)
+}
