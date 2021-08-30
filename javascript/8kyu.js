@@ -322,3 +322,9 @@ function squareSum(numbers) {
     const square = numbers.map((i) => i ** 2)
     return square.reduce((a, b) => a + b, 0)
 }
+
+//https://www.codewars.com/kata/560ecf0cb040de130e00007d
+//Grasshopper - Order of operations
+function orderOperations() {
+    return (2 + 2) * (2 + 2) * 2
+}
