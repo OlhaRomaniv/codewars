@@ -328,3 +328,10 @@ function squareSum(numbers) {
 function orderOperations() {
     return (2 + 2) * (2 + 2) * 2
 }
+
+//https://www.codewars.com/kata/5899642f6e1b25935d000161
+//Merge two sorted arrays into one
+function mergeArrays(arr1, arr2) {
+    const arrs = arr1.concat(arr2);
+    return arrs.sort((a, b) => a - b).filter((item, index) => arrs.indexOf(item) == index)
+}
