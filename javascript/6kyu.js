@@ -59,3 +59,17 @@ function findOdd(A) {
         }
     }
 }
+
+//https://www.codewars.com/kata/523f5d21c841566fde000009
+//Array.diff
+function arrayDiff(a, b) {
+    if (a.length === 0) { return [] };
+    if (b.length === 0) { return a }
+    let array = [];
+    a.forEach((el) => {
+        if (!b.includes(el)) {
+            array.push(el)
+        }
+    })
+    return array
+}
