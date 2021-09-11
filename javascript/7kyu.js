@@ -109,3 +109,9 @@ function sumTwoSmallestNumbers(numbers) {
     const sorted = numbers.sort((a, b) => a - b);
     return sorted[0] + sorted[1]
 }
+
+//https://www.codewars.com/kata/555bfd6f9f9f52680f0000c5
+//Reverse a Number
+function reverseNumber(n) {
+    return parseFloat(n.toString().split('').reverse().join('')) * Math.sign(n)
+}
