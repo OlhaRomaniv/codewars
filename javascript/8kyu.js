@@ -335,3 +335,21 @@ function mergeArrays(arr1, arr2) {
     const arrs = arr1.concat(arr2);
     return arrs.sort((a, b) => a - b).filter((item, index) => arrs.indexOf(item) == index)
 }
+
+//https://www.codewars.com/kata/526471539d52735c620000c6
+//Broken Counter
+function Counter() {
+    this.value = 0;
+}
+
+Counter.prototype.increase = function() {
+    this.value++;
+};
+
+Counter.prototype.getValue = function() {
+    return this.value;
+};
+
+Counter.prototype.reset = function() {
+    this.value = 0;
+};
