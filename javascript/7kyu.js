@@ -115,3 +115,15 @@ function sumTwoSmallestNumbers(numbers) {
 function reverseNumber(n) {
     return parseFloat(n.toString().split('').reverse().join('')) * Math.sign(n)
 }
+
+//https://www.codewars.com/kata/583f158ea20cfcbeb400000a
+//Make a function that does arithmetic!
+const arithmetic = (a, b, operator) => {
+    const operators = {
+        add: a + b,
+        subtract: a - b,
+        multiply: a * b,
+        divide: a / b
+    }
+    return operators[operator]
+}
