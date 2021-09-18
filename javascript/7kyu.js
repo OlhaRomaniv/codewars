@@ -127,3 +127,9 @@ const arithmetic = (a, b, operator) => {
     }
     return operators[operator]
 }
+
+//https://www.codewars.com/kata/5b39e3772ae7545f650000fc/solutions/javascript
+//Remove duplicate words
+function removeDuplicateWords(s) {
+    return [...new Set(s.split(' '))].join(' ');
+}
