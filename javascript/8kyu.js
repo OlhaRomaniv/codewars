@@ -353,3 +353,19 @@ Counter.prototype.getValue = function() {
 Counter.prototype.reset = function() {
     this.value = 0;
 };
+
+//https://www.codewars.com/kata/568018a64f35f0c613000054
+//Finish Guess the Number Game
+class Guesser {
+    constructor(number, lives) {
+        this.number = number;
+        this.lives = lives;
+    }
+
+    guess(n) {
+        if (!this.lives) throw new Error('You have no more life')
+        if (n === this.number) return true
+        this.lives--
+            return false
+    }
+}
