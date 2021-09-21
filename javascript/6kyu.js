@@ -73,3 +73,23 @@ function arrayDiff(a, b) {
     })
     return array
 }
+
+//https://www.codewars.com/kata/552c028c030765286c00007d
+//IQ Test
+function iqTest(numbers) {
+    const set = numbers.split(' ')
+    const even = [];
+    const odd = [];
+    for (let i = 0; i < set.length; i++) {
+        if (set[i] % 2 === 0) {
+            even.push(i)
+        } else {
+            odd.push(i)
+        }
+    }
+    if (even.length > 1) {
+        return odd[0] + 1
+    } else {
+        return even[0] + 1
+    }
+}
