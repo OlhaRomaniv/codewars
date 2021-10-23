@@ -385,3 +385,34 @@ function countBy(x, n) {
 const stringToNumber = function(str) {
     return Number(str)
 }
+
+//https://www.codewars.com/kata/577ff15ad648a14b780000e7
+//Welcome!
+function greet(language) {
+    const lng = {
+        english: 'Welcome',
+        czech: 'Vitejte',
+        danish: 'Velkomst',
+        dutch: 'Welkom',
+        estonian: 'Tere tulemast',
+        finnish: 'Tervetuloa',
+        flemish: 'Welgekomen',
+        french: 'Bienvenue',
+        german: 'Willkommen',
+        irish: 'Failte',
+        italian: 'Benvenuto',
+        latvian: 'Gaidits',
+        lithuanian: 'Laukiamas',
+        polish: 'Witamy',
+        spanish: 'Bienvenido',
+        swedish: 'Valkommen',
+        welsh: 'Croeso'
+    }
+    return lng[language] || lng.english
+}
+
+//https://www.codewars.com/kata/56676e8fabd2d1ff3000000c
+//A Needle in the Haystack
+function findNeedle(haystack) {
+    return "found the needle at position " + haystack.indexOf("needle")
+}
