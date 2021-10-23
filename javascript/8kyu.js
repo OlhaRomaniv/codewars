@@ -369,3 +369,19 @@ class Guesser {
             return false
     }
 }
+
+//https://www.codewars.com/kata/5513795bd3fafb56c200049e
+//Count by X
+function countBy(x, n) {
+    let z = [];
+    for (let i = 1; i <= n; i++) {
+        z.push(i * x)
+    }
+    return z;
+}
+
+//https://www.codewars.com/kata/544675c6f971f7399a000e79
+//Convert a String to a Number!
+const stringToNumber = function(str) {
+    return Number(str)
+}
