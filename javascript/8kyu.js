@@ -416,3 +416,25 @@ function greet(language) {
 function findNeedle(haystack) {
     return "found the needle at position " + haystack.indexOf("needle")
 }
+
+//https://www.codewars.com/kata/56f6ad906b88de513f000d96
+//Do I get a bonus?
+function bonusTime(salary, bonus) {
+    return bonus === true ? '£' + salary * 10 : '£' + salary
+}
+
+//https://www.codewars.com/kata/56f69d9f9400f508fb000ba7
+//Count the Monkeys!
+function monkeyCount(n) {
+    const count = [];
+    for (let i = 1; i <= n; i++) {
+        count.push(i)
+    }
+    return count
+}
+
+//https://www.codewars.com/kata/50654ddff44f800200000007
+//Short Long Short
+function solution(a, b) {
+    return a.length > b.length ? b + a + b : a + b + a;
+}
