@@ -438,3 +438,23 @@ function monkeyCount(n) {
 function solution(a, b) {
     return a.length > b.length ? b + a + b : a + b + a;
 }
+
+//https://www.codewars.com/kata/572059afc2f4612825000d8a
+//Training JS #8: Conditional statement--switch
+const howManydays = (month) => {
+    switch (month) {
+        case 2:
+            return 28;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            return 30;
+        default:
+            return 31;
+    }
+}
+
+//https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d
+//String ends with?
+const solution = (str, ending) => str.endsWith(ending);
