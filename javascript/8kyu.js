@@ -458,3 +458,9 @@ const howManydays = (month) => {
 //https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d
 //String ends with?
 const solution = (str, ending) => str.endsWith(ending);
+
+//https://www.codewars.com/kata/53f0f358b9cb376eca001079
+//Regular Ball Super Ball
+let Ball = function(ballType = "regular") {
+    this.ballType = ballType
+};
