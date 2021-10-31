@@ -133,3 +133,41 @@ const arithmetic = (a, b, operator) => {
 function removeDuplicateWords(s) {
     return [...new Set(s.split(' '))].join(' ');
 }
+
+//https://www.codewars.com/kata/513e1e47c600c93cef000001
+//JavaScript class-like objects
+class Animal {
+    constructor(name, type) {
+        this.name = name;
+        this.type = type;
+    }
+    toString() {
+        return this.name + " is a " + this.type
+    }
+}
+
+//https://www.codewars.com/kata/55b75fcf67e558d3750000a3
+//Building blocks
+class Block {
+    constructor([w, l, h]) {
+        this.w = w;
+        this.l = l;
+        this.h = h
+    }
+    getWidth() {
+        return this.w
+    };
+    getLength() {
+        return this.l
+    };
+    getHeight() {
+        return this.h
+    };
+    getVolume() {
+        return this.w * this.l * this.h
+    };
+    getSurfaceArea() {
+        let { l, w, h } = this;
+        return 2 * (l * w + l * h + w * h);
+    }
+}
