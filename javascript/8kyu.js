@@ -464,3 +464,46 @@ const solution = (str, ending) => str.endsWith(ending);
 let Ball = function(ballType = "regular") {
     this.ballType = ballType
 };
+
+//https://www.codewars.com/kata/547274e24481cfc469000416
+//Basic subclasses - Adam and Eve
+class God {
+    /**
+     * @returns Human[]
+     */
+    static create() {
+        return [new Man(), new Woman()]
+    }
+}
+class Human {
+    constructor(name) {
+        this.name = name;
+    }
+}
+class Man extends Human {
+    constructor(name) {
+        super(name);
+    }
+}
+class Woman extends Human {
+    constructor(name) {
+        super(name);
+    }
+}
+
+//https://www.codewars.com/kata/56f7f8215d7c12c0e7000b19
+//Fun with ES6 Classes #1 - People, people, people
+class Person {
+    constructor(firstName = "John", lastName = "Doe", age = 0, gender = "Male") {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.gender = gender;
+    }
+    sayFullName() {
+        return this.firstName + " " + this.lastName
+    }
+    static greetExtraTerrestrials(raceName) {
+        return "Welcome to Planet Earth " + raceName
+    }
+}

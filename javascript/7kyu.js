@@ -171,3 +171,13 @@ class Block {
         return 2 * (l * w + l * h + w * h);
     }
 }
+
+//https://www.codewars.com/kata/55e6125ad777b540d9000042
+//Invalid Input - Error Handling #1
+function getCount(words) {
+    let text = typeof words === 'string';
+    return {
+        vowels: text ? words.replace(/[^aeiou]/gi, '').length : 0,
+        consonants: text ? words.replace(/[^bcdfghjklmnpqrstvwxyz]/gi, '').length : 0
+    }
+}
