@@ -200,3 +200,10 @@ class Cube extends Cuboid {
         super(length, length, length);
     }
 }
+
+//https://www.codewars.com/kata/563cf89eb4747c5fb100001b
+//Remove the minimum
+function removeSmallest(arr) {
+    let min = arr.indexOf(Math.min(...arr));
+    return [...arr.slice(0, min), ...arr.slice(min + 1)]
+}
