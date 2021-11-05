@@ -181,3 +181,22 @@ function getCount(words) {
         consonants: text ? words.replace(/[^bcdfghjklmnpqrstvwxyz]/gi, '').length : 0
     }
 }
+
+//https://www.codewars.com/kata/56fbdda707cff41b68000de2
+//Fun with ES6 Classes #3 - Cuboids, Cubes and Getters
+class Cuboid {
+    constructor(length, width, height) {
+        Object.assign(this, { length, width, height })
+    }
+    get surfaceArea() {
+        return 2 * (this.length * this.width + this.length * this.height + this.height * this.width)
+    }
+    get volume() {
+        return this.length * this.height * this.width
+    }
+}
+class Cube extends Cuboid {
+    constructor(length) {
+        super(length, length, length);
+    }
+}
