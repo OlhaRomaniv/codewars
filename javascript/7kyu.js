@@ -207,3 +207,23 @@ function removeSmallest(arr) {
     let min = arr.indexOf(Math.min(...arr));
     return [...arr.slice(0, min), ...arr.slice(min + 1)]
 }
+
+//https://www.codewars.com/kata/56fcc1ee45040039ab0016da
+//Fun with ES6 Classes #4 - Cubes and Setters
+class Cube {
+    constructor(length) {
+        this.length = length;
+    }
+    get surfaceArea() {
+        return this.length * this.length * 6
+    };
+    get volume() {
+        return this.length * this.length * this.length
+    };
+    set surfaceArea(AREA) {
+        this.length = Math.sqrt(AREA / 6)
+    };
+    set volume(VOLUME) {
+        this.length = Math.pow(VOLUME, (1 / 3))
+    };
+}
