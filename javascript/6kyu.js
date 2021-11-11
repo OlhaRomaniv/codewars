@@ -93,3 +93,24 @@ function iqTest(numbers) {
         return even[0] + 1
     }
 }
+
+//https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1
+//Counting Duplicates
+function duplicateCount(text) {
+    let str = text.toLowerCase();
+    let count = 0;
+    const characters = {}
+    for (let i of str) {
+        if (!characters[i]) {
+            characters[i] = 1;
+        } else {
+            characters[i]++
+        }
+    }
+    for (let i in characters) {
+        if (characters[i] > 1) {
+            count++
+        }
+    }
+    return count
+}
