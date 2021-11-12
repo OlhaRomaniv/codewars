@@ -227,3 +227,11 @@ class Cube {
         this.length = Math.pow(VOLUME, (1 / 3))
     };
 }
+
+//https://www.codewars.com/kata/54bf85e3d5b56c7a05000cf9
+//Testing 1-2-3
+let number = (array) => {
+    return array.map((value, index) => {
+        return index + 1 + ": " + value
+    })
+}
