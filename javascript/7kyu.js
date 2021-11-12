@@ -235,3 +235,9 @@ let number = (array) => {
         return index + 1 + ": " + value
     })
 }
+
+//https://www.codewars.com/kata/53dbd5315a3c69eed20002dd
+//List Filtering
+function filter_list(l) {
+    return l.filter(i => Number.isInteger(i))
+}
