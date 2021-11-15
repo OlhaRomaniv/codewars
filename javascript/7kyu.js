@@ -241,3 +241,10 @@ let number = (array) => {
 function filter_list(l) {
     return l.filter(i => Number.isInteger(i))
 }
+
+//https://www.codewars.com/kata/56747fd5cb988479af000028
+//Get the Middle Character
+function getMiddle(s) {
+    let m = Math.floor(s.length / 2);
+    return s.length % 2 === 0 ? s[m - 1] + s[m] : s[m];
+}
