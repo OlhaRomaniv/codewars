@@ -259,3 +259,9 @@ function sumEvenNumbers(input) {
     }
     return sum
 }
+
+//https://www.codewars.com/kata/57126304cdbf63c6770012bd
+//Is it a number?
+function isDigit(s) {
+    return s == parseFloat(s);
+}
