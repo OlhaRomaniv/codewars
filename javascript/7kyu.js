@@ -248,3 +248,14 @@ function getMiddle(s) {
     let m = Math.floor(s.length / 2);
     return s.length % 2 === 0 ? s[m - 1] + s[m] : s[m];
 }
+
+//https://www.codewars.com/kata/586beb5ba44cfc44ed0006c3
+//Sum even numbers
+function sumEvenNumbers(input) {
+    let even = input.filter(num => num % 2 == 0);
+    let sum = 0;
+    for (let i of even) {
+        sum += i
+    }
+    return sum
+}
