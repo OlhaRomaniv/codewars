@@ -265,3 +265,13 @@ function sumEvenNumbers(input) {
 function isDigit(s) {
     return s == parseFloat(s);
 }
+
+//https://www.codewars.com/kata/56dd9b84fe5754786f0014f7
+//Implement Array.prototype.filter()
+Array.prototype.filter = function(func) {
+    const arr = [];
+    for (let i = 0; i < this.length; i++) {
+        if (func(this[i])) arr.push(this[i])
+    }
+    return arr
+}
