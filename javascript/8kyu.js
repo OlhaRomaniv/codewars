@@ -513,3 +513,9 @@ class Person {
 function splitAndMerge(string, separator) {
     return string.split(" ").map(word => word.split("").join(separator)).join(" ");
 }
+
+//https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3
+//Abbreviate a Two Word Name
+function abbrevName(name) {
+    return name.split(' ').map(i => i[0].toUpperCase()).join('.')
+}
