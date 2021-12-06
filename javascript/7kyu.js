@@ -275,3 +275,21 @@ Array.prototype.filter = function(func) {
     }
     return arr
 }
+
+//https://www.codewars.com/kata/554e4a2f232cdd87d9000038
+//Complementary DNA
+function DNAStrand(dna) {
+    let res = '';
+    for (let i = 0; i < dna.length; i++) {
+        dna[i] === 'T' ?
+            res += 'A' :
+            dna[i] === 'A' ?
+            res += 'T' :
+            dna[i] === 'C' ?
+            res += 'G' :
+            dna[i] === 'G' ?
+            res += 'C' :
+            res
+    }
+    return res;
+}
