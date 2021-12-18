@@ -293,3 +293,9 @@ function DNAStrand(dna) {
     }
     return res;
 }
+
+//https://www.codewars.com/kata/532b4057484b0e58e8000766
+//Use reduce() to calculate the sum of the values in an array
+function sum(array) {
+    return array.reduce((a, b) => a + b)
+}
